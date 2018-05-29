@@ -3,8 +3,8 @@
 # Summaries and overviews -------------------------------------------------
 train %>% summary # 5 fig summaries, doesnt do character variables well
 
-# One way plots
-
+# Summaries by a factor
+tapply(modelset$Fare, modelset$Pclass, summary) #Variable of interest, splitting factor, function
 
 # One way plots -----------------------------------------------------------
 # Tabulate, response is always second!!!!

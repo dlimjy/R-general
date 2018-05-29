@@ -20,6 +20,9 @@ train$Age <- ifelse(train$Age == -100, ifelse(train$Sex == "female", median_age_
 train$TextColumn <- ifelse(train$TextColumn == "", "Replacement", train$TextColumn)
 
 
+# Binning -----------------------------------------------------------------
+
+
 # # Train test split ------------------------------------------------------
 
 split_ratio <- 0.8 # Specify split ratio
